@@ -1,0 +1,23 @@
+---
+layout: index
+biaoti: 新闻活动
+---
+<section class = "content" >
+  
+</section>
+ <img width="205" height="180" src="/img/zhounianqing12.jpg" / >
+  <img height="180" width="205" src="/img/diaoyan1.jpg" / >
+   <img width="205" height="180" src="/img/huodong1.jpg" / >
+<ul class="entries">
+ 
+{% for post in site.posts %}
+<li>
+<div class='xinwenimg'>
+  <a href="{{ post.url }}" >
+
+   
+    <h6> {{ post.timu }} </h6>
+  </a ></div>
+</li>
+{% endfor %}
+</ul >
